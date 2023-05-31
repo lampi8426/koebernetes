@@ -1,0 +1,63 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "title": "My Custom Template 1",
+      "description": "Description of Custom Template 1",
+      "type": "container",
+      "logo": "",
+      "note": "",
+      "categories": ["Custom"],
+      "platforms": ["docker"],
+      "repository": "",
+      "stackFile": "",
+      "files": [],
+      "env": [],
+      "networks": [],
+      "volumes": [],
+      "labels": [],
+      "command": [],
+      "privileged": false,
+      "restartPolicy": "always",
+      "portainer": {
+        "image": "10.3.12.25:5000/apache-php:latest",
+        "network": "UTB-MacVlan",
+        "volumes": [
+          {
+            "container": "/var/www/html",
+            "bind": "/mnt/truenas/containers/${CONTAINER_NAME}"
+          }
+        ]
+      }
+    },
+    {
+      "title": "My Custom Template 2",
+      "description": "Description of Custom Template 2",
+      "type": "container",
+      "logo": "",
+      "note": "",
+      "categories": ["Custom"],
+      "platforms": ["docker"],
+      "repository": "",
+      "stackFile": "",
+      "files": [],
+      "env": [],
+      "networks": [],
+      "volumes": [],
+      "labels": [],
+      "command": [],
+      "privileged": false,
+      "restartPolicy": "always",
+      "portainer": {
+        "image": "10.3.12.25:5000/nginx:latest",
+        "network": "UTB-MacVlan",
+        "volumes": [
+          {
+            "container": "/usr/share/nginx/html",
+            "bind": "/mnt/truenas/containers/${CONTAINER_NAME}"
+          }
+        ]
+      }
+    }
+  ]
+}
