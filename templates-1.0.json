@@ -1,0 +1,29 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "title": "Template 1",
+      "description": "Description of Template 1",
+      "type": "portainer",
+      "platform": "docker",
+      "logo": "",
+      "note": "",
+      "category": "Custom",
+      "url": "http://10.3.12.10:9000/#!/4/docker/templates/custom1",
+      "config": {},
+      "logoURL": ""
+    },
+    {
+      "title": "Template 2",
+      "description": "Description of Template 2",
+      "type": "portainer",
+      "platform": "docker",
+      "logo": "",
+      "note": "",
+      "category": "Custom",
+      "url": "http://10.3.12.10:9000/#!/4/docker/templates/custom2",
+      "config": {},
+      "logoURL": ""
+    }
+  ]
+}
